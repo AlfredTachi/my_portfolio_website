@@ -30,23 +30,34 @@
   }
 
   .menu-nav {
-    height: 75vh;
+    height: 70vh;
     transform: translate3d(0, 100%, 0);
     font-size: 24px;
   }
 
   .menu-branding {
-    height: 25vh;
+    height: 30vh;
     transform: translate3d(0, -100%, 0);
 
     .portrait {
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
       background-size: 100% 100%;
       border-radius: 50%;
       background-image: url("../images/portrait.jpg");
       border: solid 4px $secondary-color;
     }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
   }
 }
 
