@@ -16,7 +16,7 @@
 @include mediaMd {
   main {
     align-items: center;
-    text-align: center;
+    //text-align: center;
 
     .lg-heading {
       line-height: 1;
@@ -47,7 +47,7 @@
 
     .portrait {
       width: 200px;
-      height: 200px;
+      height: 300px;
       background-size: 100% 100%;
       border-radius: 50%;
       background-image: url("../images/portrait.jpg");

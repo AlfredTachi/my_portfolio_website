@@ -31,6 +31,63 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
   }
+
+  &.h3-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+// Personalize Theme
+.left-column {
+  grid-area: left-column;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+
+  #theme-options-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .theme-dot {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #000;
+    margin: 5px;
+    border: 2px solid $theme-dot-border-color;
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+
+    cursor: pointer;
+
+    &:hover {
+      height: 40px;
+      width: 40px;
+      border-width: 5px;
+      @include easeOut;
+    }
+  }
+
+  #light-mode {
+    background-color: #fff;
+  }
+
+  #blue-mode {
+    background-color: #192734;
+  }
+
+  #green-mode {
+    background-color: #78866b;
+  }
+
+  #purple-mode {
+    background-color: #7e4c74;
+  }
 }
 
 a {
