@@ -16,7 +16,7 @@
 @include mediaMd {
   main {
     align-items: center;
-    //text-align: center;
+    text-align: center;
 
     .lg-heading {
       line-height: 1;
@@ -64,6 +64,10 @@
       "job3";
 
     grid-template-columns: 1fr;
+
+    .not-center-text {
+      text-align: left;
+    }
   }
 
   .projects {

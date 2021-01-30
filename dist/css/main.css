@@ -135,8 +135,8 @@ h3 {
   h1.h3-heading,
   h2.h3-heading,
   h3.h3-heading {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 700;
     text-align: center; }
 
 .left-column {
@@ -167,8 +167,6 @@ h3 {
     background-color: #fff; }
   .left-column #blue-mode {
     background-color: #192734; }
-  .left-column #green-mode {
-    background-color: #78866b; }
   .left-column #purple-mode {
     background-color: #7e4c74; }
 
@@ -293,7 +291,8 @@ main {
 
 @media screen and (max-width: 768px) {
   main {
-    align-items: center; }
+    align-items: center;
+    text-align: center; }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
@@ -322,6 +321,8 @@ main {
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
+    .about-info .not-center-text {
+      text-align: left; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
